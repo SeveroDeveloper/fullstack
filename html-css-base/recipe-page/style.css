@@ -9,6 +9,20 @@
   color: #573A37;
 }
 
+header img {
+  height: 3.0rem;
+  width: 3.0rem;
+  margin: 1rem;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
 body {
   background-image: url("./assets/bg-image.jpg");
   background-repeat: no-repeat;
@@ -22,6 +36,14 @@ body {
   margin: 48px auto 0;
   border-radius: 24px;
   padding: 24px;
+}
+
+#page.darkMode {
+  background-color: #291b1a;
+  color: #f0e8c2;
+  h1, h2 {
+    color: #f0e8c2;
+  }
 }
 
 section {
