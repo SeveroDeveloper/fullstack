@@ -1,0 +1,35 @@
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: var(--text-md);
+}
+
+#bio {
+  display: flex;
+  padding-block: 32px;
+  gap: 32px;
+}
+
+#bio > div {
+  max-width: 384px;
+}
+
+#bio h1 {
+  color: var(--text-color-primary);
+  font: var(--text-lg)
+}
+
+#info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 280px;
+}
+
+#info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
