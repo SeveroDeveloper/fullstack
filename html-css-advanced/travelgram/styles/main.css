@@ -17,7 +17,15 @@
 
 #bio h1 {
   color: var(--text-color-primary);
-  font: var(--text-lg)
+  font: var(--text-lg);
+  margin-bottom: 8px;
+}
+
+#bio img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #info {
