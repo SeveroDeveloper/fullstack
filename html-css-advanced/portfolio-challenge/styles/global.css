@@ -26,3 +26,12 @@
   --maven-pro-text-md: normal 16px/140% 'Maven Pro', sans-serif;
   --maven-pro-text-sm: normal 14px/140% 'Maven Pro', sans-serif;
 }
+
+body {
+  font: var(--maven-pro-text-sm);
+  color: var(--gray-500);
+}
+
+h1, h2, h3 {
+  font: inherit;
+}

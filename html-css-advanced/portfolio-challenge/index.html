@@ -8,34 +8,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Inconsolata&family=Maven+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
   <div id="page">
     <section id="profile">
-      <div>
-        <img src="./assets/Profile.png" alt="profile picture">
-        <i class="ph ph-code"></i>
+      <div id="about" class="grid">
+        <div id="profile-pic">
+          <img src="./assets/Profile.png" alt="profile picture">
+          <img src="./assets/images/Code.png" alt="dev icon">
+        </div>
+        <p>
+          Hello World! My name is <span class="subtitle">Amanda Severo</span> and I am a
+        </p>
+        <h1>
+          Fullstack Developer
+        </h1>
+        <p>
+          I transform needs into real, evolving and funcional applications. I develop systems through my passion for technology, contributing with innovative and effective solutions to complex challenges.
+        </p>
       </div>
-      <p>
-        Hello World! My name is <span>Amanda Severo</span> and I am a
-      </p>
-      <h1>
-        Fullstack Developer
-      </h1>
-      <p>
-        I transform needs into real, evolving and funcional applications. I develop systems through my passion for technology, contributing with innovative and effective solutions to complex challenges.
-      </p>
-      <div id="stacks">
+      <div id="stacks" class="flex gap-16">
         <span>
           <img src="./assets/icons/GitHub.svg" alt="github logo">
           Github
         </span>
         <span>
-          <img src="./assets/icons/HTML.svg" alt="html logo">
+          <img src="./assets/icons/HTML.svg" alt="html logo">         
           HTML
         </span>
         <span>
-          <img src="./assets/icons/CSS.svg" alt="css logo">
+          <img src="./assets/icons/CSS.svg" alt="css logo">      
           CSS
         </span>
         <span>
@@ -51,7 +54,7 @@
           Node.js
         </span>
       </div>
-      <i class="ph ph-caret-double-down"></i>
+      <img src="./assets/icons/CaretDoubleDown.svg" alt="CaretDoubleDown">
     </section>
     <section id="projects">
     </section>
