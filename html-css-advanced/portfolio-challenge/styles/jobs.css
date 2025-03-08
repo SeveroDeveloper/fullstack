@@ -23,7 +23,7 @@
   }
 
   h3 {
-    font: var(--asap-text-md);
+    font: var(--asap-text-sm);
     color: var(--gray-600);
     margin-block: 20px 8px;
   }
