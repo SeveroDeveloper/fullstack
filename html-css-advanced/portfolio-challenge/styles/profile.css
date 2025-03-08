@@ -2,12 +2,12 @@
   background-image: url(../assets/images/Background_Intro.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 120px 163px 183px;
+  padding: 120px 163px 60.5px;
 
   & > img {
     height: 23px;
     width: 100%;
-    margin-block: 99.5px 60.5px;
+    margin-top: 99.5px;
   }
 }
 
@@ -29,7 +29,7 @@
   }
 
   justify-items: center;
-  padding-block: 128px 80px;
+  padding-bottom: 80px;
   max-width: 680px;
   margin-inline: auto;
   text-align: center;
