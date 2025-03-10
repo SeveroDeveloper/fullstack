@@ -52,4 +52,19 @@ header {
     font: var(--asap-text-md);
     color: var(--gray-600);
   }
+  p {
+    margin-top: 8px;
+    font: var(--maven-pro-text-md);
+  }
+  &:has(p) {
+    h3 {
+      color: var(--purple);
+    }
+    margin-bottom: 48px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

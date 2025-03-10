@@ -1,0 +1,32 @@
+#contacts {
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 128px 120px 200px;
+}
+
+#links {
+  justify-content: center;
+}
+
+a {
+  width: 400px;
+  height: 68px;
+  background-color: var(--gray-300);
+  border-radius: 8px;
+  padding: 22.6px;
+  font: var(--maven-pro-text-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  i:nth-child(1) {
+    font-size: 28px;
+  }
+
+  i:nth-child(2) {
+    color: var(--blue);
+    margin-left: auto;
+  }
+}
