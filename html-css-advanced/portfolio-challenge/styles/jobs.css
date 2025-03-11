@@ -32,4 +32,9 @@
     font: var(--maven-pro-text-sm);
     color: var(--gray-500);
   }
+
+  &:hover {
+    border: solid 1.5px var(--gray-400);
+    cursor: pointer;
+  }
 }

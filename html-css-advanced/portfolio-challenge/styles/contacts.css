@@ -29,4 +29,11 @@ a {
     color: var(--blue);
     margin-left: auto;
   }
+
+  &:hover {
+    border: solid 1.5px var(--blue);
+    i {
+      color: var(--blue);
+    }
+  }
 }
