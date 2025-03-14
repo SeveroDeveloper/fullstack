@@ -22,6 +22,47 @@
           Fill the data bellow to register your child in the primary school Stars School.
         </p>
       </div>
+
+      <form enctype="multipart/form-data">
+        <fieldset id="child-info">
+          <legend>Child information</legend>
+
+          <div class="input-wrapper">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Child Name">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="birthdate">Birth date</label>
+            <input type="date" name="birthdate" id="birthdate">
+          </div>
+
+          <div class="select-wrapper">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="none">Prefer not to inform</option>
+            </select>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="medical-info">Medical information</label>
+            <textarea name="medical-info" id="medical-info"
+            placeholder="Is there any medical issues we should know about?"
+            ></textarea>
+          </div>
+
+          <div class="droparea-wrapper">
+            <label for="birth-file">Birth certificate</label>
+            <input type="file" name="birth-file" id="birth-file">
+            <img src="./assets/icons/cloud-upload.svg" alt="cloud upload icon">
+            <p>
+              Click here to <br> select files
+            </p>
+          </div>
+        </fieldset>
+      </form>
     </main>
     <aside>
       <div class="aside-container">
