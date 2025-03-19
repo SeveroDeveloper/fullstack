@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,8 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stars School</title>
   <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <div id="app">
     <main>
@@ -21,48 +25,47 @@
         <p>
           Fill the data bellow to register your child in the primary school Stars School.
         </p>
+
+        <form enctype="multipart/form-data">
+          <fieldset id="child-info">
+            <legend>Child information</legend>
+
+            <div class="input-wrapper">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Child Name">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birthdate">Birth date</label>
+              <input type="date" name="birthdate" id="birthdate">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="none">Prefer not to inform</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Medical information</label>
+              <textarea name="medical-info" id="medical-info"
+                placeholder="Is there any medical issues we should know about?"></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <label for="birth-file">Birth certificate</label>
+              <input type="file" name="birth-file" id="birth-file">
+              <img src="./assets/icons/cloud-upload.svg" alt="cloud upload icon">
+              <p>
+                Click here to <br> select files
+              </p>
+            </div>
+          </fieldset>
+        </form>
       </div>
-
-      <form enctype="multipart/form-data">
-        <fieldset id="child-info">
-          <legend>Child information</legend>
-
-          <div class="input-wrapper">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" placeholder="Child Name">
-          </div>
-
-          <div class="input-wrapper">
-            <label for="birthdate">Birth date</label>
-            <input type="date" name="birthdate" id="birthdate">
-          </div>
-
-          <div class="select-wrapper">
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender">
-              <option value="female">Female</option>
-              <option value="male">Male</option>
-              <option value="none">Prefer not to inform</option>
-            </select>
-          </div>
-
-          <div class="textarea-wrapper">
-            <label for="medical-info">Medical information</label>
-            <textarea name="medical-info" id="medical-info"
-            placeholder="Is there any medical issues we should know about?"
-            ></textarea>
-          </div>
-
-          <div class="droparea-wrapper">
-            <label for="birth-file">Birth certificate</label>
-            <input type="file" name="birth-file" id="birth-file">
-            <img src="./assets/icons/cloud-upload.svg" alt="cloud upload icon">
-            <p>
-              Click here to <br> select files
-            </p>
-          </div>
-        </fieldset>
-      </form>
     </main>
     <aside>
       <div class="aside-container">
@@ -80,4 +83,5 @@
     </aside>
   </div>
 </body>
+
 </html>
