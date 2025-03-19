@@ -18,3 +18,7 @@ legend {
 label, input:not([type="text"]), select {
   cursor: pointer;
 }
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
