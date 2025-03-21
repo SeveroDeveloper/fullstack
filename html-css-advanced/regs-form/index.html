@@ -103,6 +103,30 @@
               </div>
             </div>
           </fieldset>
+
+          <fieldset id="guardian-info">
+            <legend>Guardian information</legend>
+
+            <div class="input-wrapper">
+              <label for="g-name">Guardian name</label>
+              <input type="text" name="g-name" id="g-name">
+              <small>Main guardian and emergency contact</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="g-phone">Phone number</label>
+              <input type="tel" id="g-phone" name="g-phone" placeholder="(555) 555-1234">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="g-mail">Email</label>
+              <input type="email" id="g-mail" name="g-mail" required>
+              <div class="error">
+                <img src="./assets/icons/alert-circle.svg" alt="error icon">
+                <span>Enter a valid email</span>
+              </div>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
