@@ -1,0 +1,20 @@
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+legend {
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+
+  & img {
+    height: 1.5rem;
+    width: fit-content;
+    filter: brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(233%) hue-rotate(160deg) brightness(93%) contrast(93%);
+  }
+}

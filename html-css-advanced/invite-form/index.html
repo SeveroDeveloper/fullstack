@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parties</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <aside>
+      <header>
+        <img src="./assets/Logo.svg" alt="confetti emoji">
+        <h1>Parties</h1>
+        <h3>Create a digital invite for your event</h3>
+      </header>
+    </aside>
+    <main>
+      <h1>Create your invite</h1>
+      <form enctype="multipart/form-data">
+        <fieldset id="info">
+          <legend>
+            <img src="./assets/icons/calendar.svg" alt="calendar icon">
+            About the event
+          </legend>
+
+          <div class="input-wrapper">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Event name">
+          </div>
+
+          <div class="flex">
+            <div class="input-wrapper">
+              <label for="start">Start</label>
+              <input type="datetime-local" id="start" name="start">
+            </div>
+            <div class="input-wrapper">
+              <label for="end">End</label>
+              <input type="datetime-local" id="end" name="end">
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="input-wrapper">
+              <label>Type</label>
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="type" value="in-person" id="in-person">
+                  <label for="in-person">In-person</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="type" value="online" id="online">
+                  <label for="online">Online</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location" placeholder="Link or address">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
