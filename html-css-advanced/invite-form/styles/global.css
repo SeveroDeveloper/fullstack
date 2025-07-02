@@ -50,11 +50,16 @@
 body {
   overflow: hidden;
 
-  font: var(--body-md);
+  font: var(--body-sm);
   color: var(--text-body);
   background: var(--shape-background);
 }
 
 .flex {
   display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
 }
