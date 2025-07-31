@@ -40,6 +40,9 @@ header {
 
 main {
   overflow: auto;
+  scrollbar-color: var(--shape-background) transparent;
+  scrollbar-width: thin;
+  
   background: var(--shape-body);
   border-radius: 1rem;
   padding: 5rem 8.125rem;
