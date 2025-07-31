@@ -138,3 +138,36 @@ input[type="datetime-local"] {
     outline: 2px solid var(--brand-light);
   }
 }
+
+#themes {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.theme-radio-inner {
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+  text-align: center;
+  position: relative;
+
+  & input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & legend {
+    color: var(--text-heading);
+    font: var(--body-sm);
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
