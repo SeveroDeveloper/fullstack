@@ -85,7 +85,7 @@
           </legend>
 
           <div class="input-wrapper">
-            <label for="color">Main color</label>
+            <label>Main color</label>
             <div class="flex flex-space-between flex-wrap">
               <div class="color-radio-inner">
                 <input type="radio" name="color" value="blue" id="blue" style="background: var(--brand-light)">
@@ -124,7 +124,7 @@
           </div> 
 
           <div class="input-wrapper">
-            <label for="theme">Event theme</label>
+            <label>Event theme</label>
             <div id="themes">
               <div class="theme-radio-inner">
                 <input type="radio" name="theme" value="birthday" id="birthday">
@@ -186,6 +186,24 @@
                 <img src="./assets/images/Image-11.png" alt="friends toasting">
                 <legend for="other">Other</legend>
               </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="input-wrapper flex-1">
+              <label for="style">Style</label>
+              <div id="style-toggle">
+                <label class="switch">
+                  <input type="checkbox" id="style" name="style">
+                  <span class="slider"></span>
+                </label>
+                <label for="style" id="dark">Dark</label>
+                <label for="style" id="light">Light</label>
+              </div>
+            </div>
+            <div class="input-wrapper flex-2">
+              <label for="cover">Cover</label>
+              <input type="file" id="cover" name="cover">
             </div>
           </div>
         </fieldset>
