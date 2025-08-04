@@ -171,3 +171,13 @@ input[type="datetime-local"] {
     width: 100%;
   }
 }
+
+.theme-radio-inner:hover {
+  background-color: var(--shape-hover);
+  cursor: pointer;
+}
+
+.theme-radio-inner:has(:checked) {
+  background-color: var(--shape-button);
+  outline: 2px solid var(--brand-light);
+}
