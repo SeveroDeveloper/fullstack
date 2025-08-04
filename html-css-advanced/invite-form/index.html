@@ -203,7 +203,15 @@
             </div>
             <div class="input-wrapper flex-2">
               <label for="cover">Cover</label>
-              <input type="file" id="cover" name="cover">
+              <div id="cover-wrapper">
+                <div id="cover-button">
+                  <input required type="file" id="cover" name="cover">
+                  <img src="./assets/icons/upload.svg" alt="upload icon">
+                  <span>Upload</span>
+                </div>
+                <span id="no-file">No files selected</span>
+                <span id="file-selected">File uploaded!</span>
+              </div>
             </div>
           </div>
         </fieldset>

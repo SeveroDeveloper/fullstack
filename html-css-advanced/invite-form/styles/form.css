@@ -244,3 +244,51 @@ input:checked + .slider:before {
 #style-toggle:has(input:checked) #dark {
   display: none;
 }
+
+#cover-wrapper {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+
+#cover-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  gap: .5rem;
+  border-radius: 0.3125rem;
+  background: var(--shape-hover);
+  font: var(--body-sm);
+  font-weight: 500;
+  color: var(--text-heading);
+  position: relative;
+  cursor: pointer;
+  
+  & input {
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0;
+  }
+
+  & img {
+    width: 1rem;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(77%) saturate(1486%) hue-rotate(187deg) brightness(105%) contrast(106%);
+  }
+}
+
+#file-selected {
+  display: none;
+}
+
+#cover-button:has(input:valid) ~ #file-selected {
+  display: inline;
+}
+
+#cover-button:has(input:valid) ~  #no-file {
+  display: none;
+}
