@@ -292,3 +292,66 @@ input:checked + .slider:before {
 #cover-button:has(input:valid) ~  #no-file {
   display: none;
 }
+
+#permissions {
+  border-top: 1px solid var(--input-stroke);
+  padding-block: 2.5rem 3rem;
+  & > div {
+    display: grid;
+    gap: 0.5rem;
+  }
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & input {
+    all: unset;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--input-base);
+    border-radius: .25rem;
+    border: 1px solid var(--input-stroke);
+
+    &:checked {
+      border: 1px solid var(--brand-light);
+      background-image: url('../assets/icons/check.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1.2rem;
+    }
+  }
+}
+
+a {
+  color: var(--brand-light);
+  font-weight: 500;
+}
+
+button {
+  all: unset;
+  background-color: var(--brand-dark);
+  color: var(--text-heading);
+  font: var(--body-md);
+  font-weight: 500;
+  padding: .875rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-left: auto;
+
+  & img {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
