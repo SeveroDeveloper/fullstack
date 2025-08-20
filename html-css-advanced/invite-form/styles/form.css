@@ -355,3 +355,22 @@ button {
     background-color: var(--brand-mid);
   }
 }
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  font: var(--body-xs);
+  color: var(--danger);
+
+  & img {
+    width: 1rem;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(4950%) hue-rotate(329deg) brightness(108%) contrast(101%);
+  }
+}
+
+input:not(:focus):valid + .error {
+  display: none;
+}
