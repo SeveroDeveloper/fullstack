@@ -23,8 +23,8 @@
 .btn:hover {
   --btn-bg-color: linear-gradient(
     90deg,
-    var(--text-color-secondary) 0%,
-    var(--text-color-primary) 100%
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
   );
   --btn-color: var(--surface-color);
   -webkit-background-clip: initial;
