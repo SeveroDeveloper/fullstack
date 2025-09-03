@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,9 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
   <title>Zingen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
 </head>
+
 <body>
   <header>
     <div class="container py-base">
@@ -52,7 +56,9 @@
           <strong>Know the app</strong>
           <h2>The perfect app to learn to sing</h2>
         </header>
-        <p>Our AI algorithm allows to remove the original vocals and keep the song's instrumental. This way, we have the bigger library of songs to karaoke! Besides, when singing, your voice and tuning will be compared by the algorithm to provide a precise analysis of your perfomance, helping you to improve you singing.</p>
+        <p>Our AI algorithm allows to remove the original vocals and keep the song's instrumental. This way, we have the
+          bigger library of songs to karaoke! Besides, when singing, your voice and tuning will be compared by the
+          algorithm to provide a precise analysis of your perfomance, helping you to improve you singing.</p>
       </div>
       <div class="desktop-only">
         <img src="./assets/images/App mockups.png" alt="App mockups">
@@ -65,14 +71,16 @@
       <div class="card py-lg px-lg">
         <img src="assets/icons/MagicWand.svg" alt="">
         <h3>The biggest karaoke musics library</h3>
-        <p>Our AI algorithm removes the original vocals of any music and make it ready for karaoke, with a wave of a wand.</p>
+        <p>Our AI algorithm removes the original vocals of any music and make it ready for karaoke, with a wave of a
+          wand.</p>
       </div>
 
       <div class="card py-lg px-lg">
         <div>
           <img src="assets/icons/GameController.svg" alt="">
           <h3>Gamified experience</h3>
-          <p>Your performance is scored according to our ultra-precise algorithm. Challenge yourself, gain recognition, and celebrate your evolution!</p>
+          <p>Your performance is scored according to our ultra-precise algorithm. Challenge yourself, gain recognition,
+            and celebrate your evolution!</p>
         </div>
         <img class="desktop-only" src="assets/images/Tela 2.png" alt="">
       </div>
@@ -80,14 +88,16 @@
       <div class="card py-lg px-lg">
         <img src="assets/icons/MicrophoneStage.svg" alt="">
         <h3>Record your performances</h3>
-        <p>To share with your friends or to track your progress, our audio and video recording feature allows you to enjoy the experience to the fullest!</p>
+        <p>To share with your friends or to track your progress, our audio and video recording feature allows you to
+          enjoy the experience to the fullest!</p>
       </div>
 
       <div class="card py-lg px-lg">
         <div>
           <img src="assets/icons/UsersThree.svg" alt="">
           <h3>Share with community</h3>
-          <p>Share your records with the community, interact and explore the vocal performances of others on your feed!</p>
+          <p>Share your records with the community, interact and explore the vocal performances of others on your feed!
+          </p>
         </div>
         <img class="desktop-only" src="assets/images/Tela 1.png" alt="">
       </div>
@@ -96,13 +106,72 @@
         <div>
           <img src="assets/icons/MusicNotes.svg" alt="">
           <h3>Real time lyrics</h3>
-          <p>Never loses the rhythm with the songs lyrics synchronized and shown in real time. You can also activate the original voice to help.</p>
+          <p>Never loses the rhythm with the songs lyrics synchronized and shown in real time. You can also activate the
+            original voice to help.</p>
         </div>
         <img class="desktop-only" src="assets/images/Tela 3.png" alt="">
       </div>
     </div>
   </section>
 
+  <section id="pricing">
+    <div class="container py-xl">
+      <header>
+        <strong>Plans and pricing</strong>
+        <h2>Subscribe and have unlimited access to all features</h2>
+      </header>
 
+      <div class="cards even-columns items-center">
+        <div class="card py-lg px-lg">
+          <h3>Basic</h3>
+          <p>Download the app and start singing right away!</p>
+          <zin-pricing>Free</zin-pricing>
+          <a href="#download" class="btn btn-md" aria-label="Download now"></a>
+          <div class="separator"></div>
+          <ul role="list" class="grid gap-1">
+            <li>With ads</li>
+            <li>Till 5 songs per day</li>
+            <li>Sing only songs available on free plan library</li>
+          </ul>
+        </div>
+
+        <div class="premium">
+          <div class="card py-lg px-lg">
+            <span>1 free month</span>
+            <h3>Premium</h3>
+            <p>Ideal for those who are tired of getting ashamed on karaoke</p>
+            <zin-pricing>$24.90 <small>/month</small>
+            </zin-pricing>
+            <a href="#download" class="btn btn-md">Try for free</a>
+            <div class="separator"></div>
+            <ul role="list" class="grid gap-1">
+              <li>Without ads breaks</li>
+              <li>Sign how many songs you want</li>
+              <li>Sign all songs from the library</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card py-lg px-lg">
+          <h3>Family</h3>
+          <p>To those families who loves gathering togheter to sing together</p>
+          <zin-pricing>
+            $21.90
+            <small>/month per person</small>
+          </zin-pricing>
+          <a href="#download" class="btn btn-md" aria-label="Sign now"></a>
+          <div class="separator"></div>
+          <ul role="list" class="grid gap-1">
+            <li>Without ads breaks</li>
+            <li>Sign how many songs you want</li>
+            <li>Sign all songs from the library</li>
+          </ul>
+
+          <small>Minimum of 4 people in family plan.</small>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
