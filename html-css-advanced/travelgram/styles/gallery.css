@@ -9,3 +9,9 @@
   width: 286px;
   height: auto;
 }
+
+@media (width >= 80em) {
+  #gallery {
+    justify-content: center;
+  }
+}
