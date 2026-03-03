@@ -2,16 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding-block: 24px;
 }
 
 #gallery img {
-  width: 286px;
-  height: auto;
+  flex: 1 1 286px;
+  min-width: 0;
+  /* the default min-width of flex items is auto, which is the width of the content. Setting it to 0 allows the images to shrink below their intrinsic width if necessary, enabling a more flexible layout. Without this, the images will probably be giant (as their inital size) */
 }
 
-@media (width >= 80em) {
-  #gallery {
-    justify-content: center;
+@media (width < 80em) {
+  #gallery img {
+    flex-basis: 328px;
   }
 }
