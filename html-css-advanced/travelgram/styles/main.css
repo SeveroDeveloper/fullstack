@@ -7,7 +7,6 @@
 
 #bio {
   display: flex;
-  padding-block: 32px;
   gap: 32px;
 }
 
@@ -46,5 +45,14 @@
   #profile, #bio {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  #bio img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #profile {
+    gap: 2rem;
   }
 }

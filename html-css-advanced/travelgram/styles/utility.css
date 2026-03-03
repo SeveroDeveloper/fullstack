@@ -10,7 +10,10 @@
 
 .py-lg {
   padding-block: var(--py-lg);
-  /* tirar dos outros pra ficar bom */
+}
+
+.py-md {
+  padding-block: var(--py-md);
 }
 
 @media (width < 80em) {

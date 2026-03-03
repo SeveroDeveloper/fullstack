@@ -20,7 +20,9 @@
   --text-sm: 12px/170% var(--font-family);
 
   --px-lg: 2rem;
+
   --py-lg: 2rem;
+  --py-md: 1.5rem;
 }
 
 body {
@@ -50,5 +52,7 @@ a img:hover {
 @media (width < 80em) {
   :root {
     --px-lg: 1rem;
+    --py-md: 1.25rem;
+    --text-lg: bold 24px/125% var(--font-family);
   }
 }
